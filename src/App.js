@@ -1,9 +1,10 @@
+import Subscribe from "./components/Subscribe";
 import Pages from "./pages/Pages";
 
 function App() {
   return (
-    <div className="">
-      <main className="md:px-20 lg:px-40 bg-slate-300 px-4">
+    <div>
+      <main className=" font-libre m-0 p-0">
         <Pages />
       </main>
     </div>

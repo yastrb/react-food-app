@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className='bg-slate-300'>
-            <nav className=' flex flex-col '>
+        <div className='bg-white fixed top-36 w-full '>
+            <nav className=' flex flex-col'>
                 <NavLink to="/">Italian</NavLink>
                 <NavLink to="/">American</NavLink>
                 <NavLink to="/">Thai</NavLink>
