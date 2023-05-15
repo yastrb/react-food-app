@@ -1,7 +1,7 @@
 ﻿
 
 import React, { useEffect, useState } from 'react';
-import styled from "styled-components";
+
 import image1 from '../img/sweet1.jpg';
 import image2 from '../img/sweet2.jpg';
 import image3 from '../img/sweet3.jpg';

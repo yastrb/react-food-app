@@ -2,6 +2,7 @@
 import Home from './Home'
 import Header from './Header'
 import Subscribe from '../components/Subscribe'
+import Collections from './Collections'
 
 const Pages = () => {
     return (
@@ -9,6 +10,7 @@ const Pages = () => {
             <Header/>
             <Home/>
             <Subscribe/>
+            <Collections/>
         </div>
 
     )
