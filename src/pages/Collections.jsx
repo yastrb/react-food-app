@@ -33,21 +33,20 @@ const Collections = () => {
   return (
 
     <div>
-      <section>
-        <h3>Hand-Picked Collections</h3>
-        <div className="wrapper">
-          <Grid container spacing={3} columns={{ sm: 2, md: 6 }}>
-            {collection.map((item) => {
-              return <Grid item md={6} >
-
+      <section className=' container mx-auto px-4 '>
+        <h3 >Hand-Picked Collections</h3>
+        <div className=" grid md:grid-cols-2 gap-3">
+          {collection.map((item) => {
+            return (
+              <div className='' key={item.id}>
                 <Card key={item.id}>
-                  <CardMedia
-                  component="img"
-                    // sx={{ height: 140 }}
-                    height= '140'
-                    md={{width: 200}}
+                  {/* <CardMedia
+                    component="img"
                     image={item.image}
-                  />
+                  /> */}
+                  <div className='relative  overflow-hidden lg:max-h-52 max-h-64 min-h-[20rem]'>
+                    <img className=' absolute left-0 w-full h-full object-cover transition duration-700 hover:scale-110' src={item.image} alt={item.title} />
+                  </div>
                   <CardContent>
                     <h5>{item.title}</h5>
                   </CardContent>
@@ -55,9 +54,9 @@ const Collections = () => {
                     <Button size="small">156 Recipes</Button>
                   </CardActions>
                 </Card>
-              </Grid>
-            })}
-          </Grid>
+              </div>
+            )
+          })}
         </div>
       </section>
     </div>
