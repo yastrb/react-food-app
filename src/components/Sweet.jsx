@@ -9,34 +9,34 @@ import '@splidejs/react-splide/css';
 import Rating from '@mui/material/Rating';
 
 
-const sweet = [
-  {
-    image: image1,
-    title: "Cupcake Delicious",
-  },
-  {
-    image: image2,
-    title: "Tasty Tasty",
-  },
-  {
-    image: image3,
-    title: "Sweet Cake",
-  },
+// const sweet = [
+//   {
+//     image: image1,
+//     title: "Cupcake Delicious",
+//   },
+//   {
+//     image: image2,
+//     title: "Tasty Tasty",
+//   },
+//   {
+//     image: image3,
+//     title: "Sweet Cake",
+//   },
 
-]
+// ]
 
 const Sweet = () => {
   const [value, setValue] = React.useState(5);
-  // const [sweet, setSweet] = useState([]);
+  const [sweet, setSweet] = useState([]);
 
-  // useEffect(() => { getSweet(); }, []);
-  // const getSweet = async () => {
-  //     const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=3&tags=dessert
-  //     `);
-  //     const data = await api.json();
-  //     setSweet(data.recipes)
-  //     console.log(data);
-  // }
+  useEffect(() => { getSweet(); }, []);
+  const getSweet = async () => {
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=3&tags=dessert
+      `);
+      const data = await api.json();
+      setSweet(data.recipes)
+      console.log(data);
+  }
 
   return (
     <>

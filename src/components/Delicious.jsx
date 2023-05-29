@@ -6,32 +6,32 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Rating from '@mui/material/Rating';
 
 
-const delicious = [
-    {
-        image: image3,
-        title: "Healthy Food",
-    },
-    {
-        image: image2,
-        title: "Yummy Yummy",
-    },
-    {
-        image: image3,
-        title: "Give Me Two",
-    },
+// const delicious = [
+//     {
+//         image: image3,
+//         title: "Healthy Food",
+//     },
+//     {
+//         image: image2,
+//         title: "Yummy Yummy",
+//     },
+//     {
+//         image: image3,
+//         title: "Give Me Two",
+//     },
 
-]
+// ]
 
 const Delicious = () =>{ 
     const [value, setValue] = React.useState(5);
-    // const [delicious, setDelicious] = useState([]);
-    // useEffect(() => { getPopular(); }, []);
-    // const getPopular = async () => {
-    //     const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=3`);
-    //     const data = await api.json();
-    //     setDelicious(data.recipes)
-    //     console.log(data);
-    // }
+    const [delicious, setDelicious] = useState([]);
+    useEffect(() => { getPopular(); }, []);
+    const getPopular = async () => {
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=3`);
+        const data = await api.json();
+        setDelicious(data.recipes)
+        console.log(data);
+    }
 
     return (
         <>

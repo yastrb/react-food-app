@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import image1 from "../img/sweet1.jpg"
 import image2 from "../img/sweet2.jpg"
 import image3 from "../img/sweet3.jpg"
+import { NavLink } from 'react-router-dom';
 
 const delicious = [
     {
@@ -42,12 +43,14 @@ const Categories = () => {
                 <Grid container spacing={3}>
                     {delicious.map((reciepe) => {
                         return (
+                            
                             <Grid xs={4} md={2}>
+                                <NavLink>
                                 <div className='relative mx-auto overflow-hidden rounded-full md:w-40 md:h-40 w-32 h-32'>
                                     <img className=' rounded-full absolute left-0  w-full h-full object-cover transition duration-700 hover:scale-110' src={reciepe.image} />
                                 </div>
-
                                 <p className=' text-sm md:text-lg font-inter text-center mt-3 transition duration-300 hover:text-[#80c8d5]' >{reciepe.title}</p>
+                                </NavLink>
                             </Grid>
                         )
                     })}
