@@ -22,7 +22,7 @@ import Rating from '@mui/material/Rating';
 
 // ]
 
-const Delicious = () =>{ 
+const Delicious = () => {
     const [value, setValue] = React.useState(5);
     const [delicious, setDelicious] = useState([]);
     useEffect(() => { getPopular(); }, []);
@@ -54,7 +54,8 @@ const Delicious = () =>{
                         </div>
                     )
                 })}
-            </div></>
+            </div>
+        </>
 
     )
 }

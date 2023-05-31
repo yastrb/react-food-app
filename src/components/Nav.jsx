@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className='bg-white fixed top-36 w-full '>
-            <nav className=' flex flex-col'>
-                <NavLink to="/">Italian</NavLink>
-                <NavLink to="/">American</NavLink>
-                <NavLink to="/">Thai</NavLink>
-                <NavLink to="/">Japanese</NavLink>
+        <div className='bg-[white] absolute z-50 left-0 top-36 w-full h-[100vh]'>
+            <nav className=' flex flex-col text-center'>
+                <NavLink className=" nav" to="/cuisine/italian">Italian</NavLink>
+                <NavLink className=" nav" to="/cuisine/american">American</NavLink>
+                <NavLink className=" nav" to="/cuisine/thai">Thai</NavLink>
+                <NavLink className=" nav" to="/cuisine/japanese">Japanese</NavLink>
             </nav>
         </div>
     )

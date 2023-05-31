@@ -5,6 +5,8 @@ import Menu5LineIcon from 'remixicon-react/Menu5LineIcon';
 import CloslineIcon from "remixicon-react/CloseLineIcon";
 import logo from "../img/logo_1.png"
 import Navigation from '../components/Navigation';
+import Search from './../components/Search';
+
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState();
@@ -30,7 +32,8 @@ const Header = () => {
                     </div>
 
                     <div >
-                        <SearchLineIcon className=" cursor-pointer" size={26} />
+                        {/* <SearchLineIcon className=" cursor-pointer" size={26} /> */}
+                        <Search className=''/>
                     </div>
                 </div>
             </header>
