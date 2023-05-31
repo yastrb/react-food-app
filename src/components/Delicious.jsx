@@ -4,6 +4,7 @@ import image2 from '../img/food2.jpg';
 import image3 from '../img/food3.jpg';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Rating from '@mui/material/Rating';
+import { Link } from 'react-router-dom';
 
 
 // const delicious = [
@@ -39,6 +40,7 @@ const Delicious = () => {
             <div className='wrapper'>
                 {delicious.map((reciepe) => {
                     return (
+                        <Link to ={'/reciepe/' + reciepe.id}>
                         <div className='card ' key={reciepe.id}>
                             <div className="my-3">
                                 <div className='relative rounded-lg overflow-hidden lg:max-h-52 max-h-64 min-h-[20rem]'>
@@ -52,6 +54,7 @@ const Delicious = () => {
                                 <p className='text-sm md:text-lg font-inter pt-1 pb-2 transition duration-300 hover:text-[#80c8d5]' >{reciepe.title}</p>
                             </div>
                         </div>
+                        </Link>
                     )
                 })}
             </div>

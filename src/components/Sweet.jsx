@@ -1,7 +1,7 @@
 ﻿
 
 import React, { useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import image1 from '../img/sweet1.jpg';
 import image2 from '../img/sweet2.jpg';
 import image3 from '../img/sweet3.jpg';
@@ -31,7 +31,7 @@ const Sweet = () => {
 
   useEffect(() => { getSweet(); }, []);
   const getSweet = async () => {
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=3&tags=dessert
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=4&tags=dessert
       `);
       const data = await api.json();
       setSweet(data.recipes)
@@ -44,6 +44,7 @@ const Sweet = () => {
       <div className='wrapper'>
         {sweet.map((reciepe) => {
           return (
+            <Link to={"/reciepe/" + reciepe.id}>
             <div className='card ' key={reciepe.id}>
               <div className="my-3">
                 <div className='relative rounded-lg overflow-hidden lg:max-h-52 max-h-64 min-h-[20rem]'>
@@ -57,6 +58,7 @@ const Sweet = () => {
                 <p className='text-sm md:text-lg font-inter pt-4 transition duration-300 hover:text-[#80c8d5]' >{reciepe.title}</p>
               </div>
             </div>
+            </Link>
           )
         })}
       </div></>
