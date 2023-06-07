@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Cuisine from './Cuisine'
 import Searched from './Searched'
 import Recipe from './Recipe';
+import Test from './test'
 
 
 const Pages = () => {
@@ -18,6 +19,7 @@ const Pages = () => {
                 <Route path='/cuisine/:type' element={<Cuisine />} />
                 <Route path='/searched/:search' element={<Searched />} />
                 <Route path='/recipe/:name' element={<Recipe />} />
+                {/* <Route path='/recipe/:name' element={<Test />} /> */}
             </Routes>
             <Subscribe />
             <Collections />
