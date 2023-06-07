@@ -13,14 +13,43 @@ function Recipe() {
         setDetails(detailData);
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         fetchDetails();
+        fetchCalories();
     }, [params.name]);
-  return (
-    <div>
-        <h3>{details.title}</h3>
-    </div>
-  )
+
+    const fetchCalories = async () => {
+        try {
+            const response = await fetch(`https://api.spoonacular.com/recipes/${params.name}/nutritionWidget.json?apiKey=${process.env.REACT_APP_API_KEY}`);
+
+            if (!response.ok) {
+                throw new Error('Помилка отримання даних');
+            }
+
+            const data = await response.json();
+            const calories = data.calories;
+            console.log('Калорії:', calories);
+        } catch (error) {
+            console.error('Помилка під час отримання калорійності рецепту:', error);
+        }
+    };
+
+    return (
+        <div>
+            <section className=' container mx-auto px-4 mt-10 mb-5'>
+                <div className=' flex'>
+                    <div>
+                        <h2>{details.title}</h2>
+                        <img src={details.image} alt={details.title} />
+                    </div>
+                    <div>
+                        <button className=' py-1 px-2 text-[#313131] bg-white border border-black border-2'>Instructions</button>
+                        <button>Ingredients</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
 }
 
 export default Recipe
