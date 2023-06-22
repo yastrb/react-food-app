@@ -79,7 +79,13 @@ function Recipe() {
                             Ingredients
                         </button>
                         <div>
-                            {/* <h3 >{details.summary}</h3> */}
+                            <p dangerouslySetInnerHTML={{__html: details.summary}} ></p>
+                            <p dangerouslySetInnerHTML={{__html: details.instructions}} ></p>
+                            <ul>
+                                {details.extendedIngredients.map((ingridient)=>
+                                <li key={ingridient.id}>{ingridient.original}</li>
+                                )}
+                            </ul>
                         </div>
                     </div>
                 </div>
