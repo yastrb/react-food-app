@@ -79,13 +79,22 @@ function Recipe() {
                             Ingredients
                         </button>
                         <div>
-                            <p dangerouslySetInnerHTML={{__html: details.summary}} ></p>
-                            <p dangerouslySetInnerHTML={{__html: details.instructions}} ></p>
-                            <ul>
-                                {details.extendedIngredients.map((ingridient)=>
-                                <li key={ingridient.id}>{ingridient.original}</li>
-                                )}
-                            </ul>
+                            {isActiveInstructions === true && (
+                                <div>
+                                    <li dangerouslySetInnerHTML={{ __html: details.summary }} ></li>
+                                    <li dangerouslySetInnerHTML={{ __html: details.instructions }} ></li>
+                                </div>
+                            )}
+                            {isActiveIngredients === true && (
+                                <div>
+                                    <ul>
+                                        {details.extendedIngredients.map((ingridient) =>
+                                            <li key={ingridient.id}>{ingridient.original}</li>
+                                        )}
+                                    </ul>
+                                </div>
+                            )}
+
                         </div>
                     </div>
                 </div>

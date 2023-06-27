@@ -1,6 +1,8 @@
-﻿import React from 'react';
+﻿import { ListItem } from '@mui/material';
+import React from 'react';
 import {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Searched() {
   const [searchRecipes, setSearchRecipes] = useState([]);
@@ -24,7 +26,8 @@ function Searched() {
             <h3>{`Search results for: ${searchQuery}`}</h3>
             <div className='wrapper'>
                 {searchRecipes.map((reciepe) => {
-                    return (
+                    return ( 
+                        <Link to={'/recipe/' + reciepe.id}>
                         <div className='card ' key={reciepe.id}>
                             <div className="my-3">
                                 <div className='relative rounded-lg overflow-hidden lg:max-h-52 max-h-64 min-h-[20rem]'>
@@ -38,6 +41,7 @@ function Searched() {
                                 <p className='text-sm md:text-lg font-inter pt-1 pb-2 transition duration-300 hover:text-[#80c8d5]' >{reciepe.title}</p>
                             </div>
                         </div>
+                        </Link>
                     )
                 })}
             </div>

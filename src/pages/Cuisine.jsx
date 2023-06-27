@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const Cuisine = () => {
     const [cuisine, setCuisine] = useState([])
@@ -28,6 +29,7 @@ const Cuisine = () => {
             return (
               <div className='' key={item.id}>
                 <Card key={item.id}>
+                  <Link to={'/recipe/' + item.id}>
                   {/* <CardMedia
                     component="img"
                     image={item.image}
@@ -41,6 +43,7 @@ const Cuisine = () => {
                   {/* <CardActions>
                     <Button size="small">See</Button>
                   </CardActions> */}
+                  </Link>
                 </Card>
               </div>
             )
