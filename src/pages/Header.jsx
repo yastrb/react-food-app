@@ -15,7 +15,7 @@ const Header = () => {
     };
     return (
         <>
-            <header className='mx-auto px-4 py-4 bg-white relative'>
+            <header className=' container mx-auto py-4 bg-white relative'>
                 <div className=' flex justify-between items-center'>
                     <div className='lg:hidden' onClick={toggleMenu}>
                         {showMenu ? <CloslineIcon className=" cursor-pointer" size={26} /> : <Menu5LineIcon className=" cursor-pointer" size={26} />}

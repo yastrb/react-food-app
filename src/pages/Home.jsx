@@ -6,7 +6,7 @@ import Categories from './Categories'
 
 const Home = () => {
     return (
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto'>
             <Delicious />
             <Sweet />
             <Categories/>

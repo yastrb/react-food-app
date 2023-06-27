@@ -57,9 +57,9 @@ function Recipe() {
         <div>
             <section className='container mx-auto px-4 mt-10 mb-5'>
                 <div className='flex flex-col gap-8 text-center '>
-                    <div className=' w-full'>
+                    <div className=' w-full '>
                         <h2 className='mb-4 font-black text-2xl'>{details.title}</h2>
-                        <img className=' w-full ' src={details.image} alt={details.title} />
+                        <img className=' object-cover w-[400px] md:w-[600px] mx-auto  ' src={details.image} alt={details.title} />
                     </div>
                     <div className=''>
                         <button
