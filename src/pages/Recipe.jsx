@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 function Recipe() {
@@ -18,8 +18,12 @@ function Recipe() {
     };
 
     useEffect(() => {
-        fetchDetails();
-        fetchCalories();
+        const fetchData = async () => {
+            await fetchDetails();
+            await fetchCalories();
+        };
+    
+        fetchData();
     }, [params.name]);
 
     const fetchCalories = async () => {

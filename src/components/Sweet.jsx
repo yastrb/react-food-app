@@ -1,10 +1,7 @@
-﻿
+
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import image1 from '../img/sweet1.jpg';
-import image2 from '../img/sweet2.jpg';
-import image3 from '../img/sweet3.jpg';
 import '@splidejs/react-splide/css';
 import Rating from '@mui/material/Rating';
 
@@ -26,7 +23,7 @@ import Rating from '@mui/material/Rating';
 // ]
 
 const Sweet = () => {
-  const [value, setValue] = React.useState(5);
+  const [value, ] = React.useState(5);
   const [sweet, setSweet] = useState([]);
 
   useEffect(() => { getSweet(); }, []);

@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import Delicious from '../components/Delicious'
 import Sweet from '../components/Sweet'
 import Categories from './Categories'

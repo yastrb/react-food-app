@@ -1,10 +1,7 @@
-﻿import React, {useEffect, useState} from 'react'
-import {Links, useParams} from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { useParams} from 'react-router-dom'
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 const Cuisine = () => {

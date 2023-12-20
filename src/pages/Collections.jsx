@@ -1,14 +1,13 @@
-﻿import React from 'react';
+import React from 'react';
 import image1 from '../img/sushi.jpg';
 import image2 from '../img/salmon.jpg';
 import image3 from '../img/muffin.jpg';
 import image4 from '../img/breakfast.jpg'
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-import { Grid } from '@mui/material';
+
 
 const collection = [
   {

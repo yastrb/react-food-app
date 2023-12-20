@@ -1,6 +1,5 @@
-﻿import React, { useState } from 'react'
+import React, { useState } from 'react'
 import Nav from './../components/Nav';
-import SearchLineIcon from 'remixicon-react/SearchLineIcon';
 import Menu5LineIcon from 'remixicon-react/Menu5LineIcon';
 import CloslineIcon from "remixicon-react/CloseLineIcon";
 import logo from "../img/logo_1.png"

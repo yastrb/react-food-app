@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import Home from './Home'
 import Header from './Header'
 import Subscribe from '../components/Subscribe'
