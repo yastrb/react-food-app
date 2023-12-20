@@ -33,7 +33,7 @@ const Collections = () => {
   return (
 
     <div>
-      <section className=' container mx-auto px-4 '>
+      <section className=' container mx-auto px-4 mb-8'>
         <h3 >Hand-Picked Collections</h3>
         <div className=" grid md:grid-cols-2 gap-3">
           {collection.map((item) => {

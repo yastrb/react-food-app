@@ -17,6 +17,6 @@ module.exports = {
         inter: [ 'Inter', 'sans-serif'],
       },
     },
-    plugins: [],
+    plugins: [require("tailgrids/plugin")],
   },
 };

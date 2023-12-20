@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Cuisine from './Cuisine'
 import Searched from './Searched'
 import Recipe from './Recipe';
+import Footer from '../components/Footer';
 
 
 
@@ -23,6 +24,7 @@ const Pages = () => {
             </Routes>
             <Subscribe />
             <Collections />
+            <Footer/>
         </>
 
     )
