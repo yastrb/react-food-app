@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/react-food-app/static/css/main.fa34a9f7.css",
-    "main.js": "/react-food-app/static/js/main.af5d8243.js",
+    "main.css": "/react-food-app/static/css/main.4a42ae85.css",
+    "main.js": "/react-food-app/static/js/main.1f1e139f.js",
+    "static/media/sweet3.jpg": "/react-food-app/static/media/sweet3.5e0f01a9e5d435a6a340.jpg",
+    "static/media/muffin.jpg": "/react-food-app/static/media/muffin.9b6158541ecc83ae2800.jpg",
+    "static/media/breakfast.jpg": "/react-food-app/static/media/breakfast.be754f96f180357015d6.jpg",
+    "static/media/salmon.jpg": "/react-food-app/static/media/salmon.65c6e1886c0415efebe3.jpg",
+    "static/media/sushi.jpg": "/react-food-app/static/media/sushi.ca374fcabf17b283f67f.jpg",
+    "static/media/sweet1.jpg": "/react-food-app/static/media/sweet1.8cf6e8d548cf0e31d584.jpg",
+    "static/media/sweet2.jpg": "/react-food-app/static/media/sweet2.171b7b3c764e1f333a8a.jpg",
+    "static/media/logo_1.png": "/react-food-app/static/media/logo_1.5289bc0524dc559cbd71.png",
     "index.html": "/react-food-app/index.html",
-    "main.fa34a9f7.css.map": "/react-food-app/static/css/main.fa34a9f7.css.map",
-    "main.af5d8243.js.map": "/react-food-app/static/js/main.af5d8243.js.map"
+    "main.4a42ae85.css.map": "/react-food-app/static/css/main.4a42ae85.css.map",
+    "main.1f1e139f.js.map": "/react-food-app/static/js/main.1f1e139f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa34a9f7.css",
-    "static/js/main.af5d8243.js"
+    "static/css/main.4a42ae85.css",
+    "static/js/main.1f1e139f.js"
   ]
 }
